@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.layout {
+  width: 750px;
+  box-sizing: border-box;
+  padding: 0 32px;
+  font-family: 微软雅黑;
+  text-align: center; }
+  .layout .head {
+    margin-top: 100px;
+    height: 134px; }
+  .layout .game-name {
+    font-size: 100px;
+    width: 234px;
+    line-height: 134px;
+    padding: 0 42px 0 34px;
+    float: left;
+    font-weight: 700; }
+  .layout .score-box {
+    line-height: 134px;
+    background: #09bb07;
+    text-align: center;
+    float: right;
+    height: 100%;
+    min-width: 134px;
+    border-radius: 5px;
+    font-weight: 700; }
+    .layout .score-box:last-child {
+      margin-right: 30px; }
+    .layout .score-box .title {
+      color: aliceblue;
+      height: 64px;
+      font-size: 28px;
+      line-height: 64px; }
+    .layout .score-box .score {
+      color: aliceblue;
+      height: 60px;
+      font-size: 32px;
+      line-height: 60px; }
+  .layout .introduce {
+    height: 134px;
+    font-size: 28px;
+    line-height: 134px;
+    text-align: left;
+    padding: 0 40px; }
+  .layout .chessboard {
+    box-sizing: border-box;
+    border: 15px solid #09bb07;
+    border-radius: 8px;
+    letter-spacing: -8px; }
+  .layout .chess {
+    display: inline-block;
+    vertical-align: top;
+    width: 134px;
+    height: 134px;
+    line-height: 134px;
+    background: #41d530;
+    color: #09bb07;
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0;
+    border: 15px solid  #09bb07; }
+    .layout .chess:active {
+      background: #9de49c; }
