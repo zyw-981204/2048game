@@ -1,5 +1,5 @@
 *{
-    transition: all 0.5s;
+    transition: all 1s;
 }
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
 /* structural elements 结构元素 */
@@ -135,4 +135,25 @@ hr {
     content: " ";
     display: block;
     clear: both;
+}
+ul{
+    font-size: 0;
+    letter-spacing: -4px;
+    word-spacing: -4px; //解决4px间隙的全兼容做法
+
+}
+
+li{
+    display: inline-block;
+    zoom: 1;
+    *display: inline; //inline-block兼容ie
+
+padding: 3px 5px;
+    background-color: #abcdef;
+
+    font-size: 14px;
+    letter-spacing: normal;
+    word-spacing: normal; //解决4px间隙的全兼容做法
+
+border:1px solid #eee;
 }

@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>2048</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection"> idth=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" /> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2048</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/flex.css">
 </head>
+
 <body>
-<div class="layout">
-  <div class="head">
-    <div class="game-name">2048</div>
-    <div class="score-box">
-      <div class="title">BEST</div>
-      <div class="score">12200</div>
+    <div class="layout">
+        <div class="head">
+            <div class="game-name">2048</div>
+            <div class="score-box">
+                <div class="title">BEST</div>
+                <div class="score" id="bestScore">0</div>
+            </div>
+            <div class="score-box">
+                <div class="title">SCORE</div>
+                <div class="score" id="score">0</div>
+            </div>
+        </div>
+        <div class="introduce">join the numbers and get the 2048 tile</div>
+        <div class="chessboard" id="chessboard">
+            <span class="chess" id="chess-0-0"></span>
+            <span class="chess" id="chess-0-1"></span>
+            <span class="chess" id="chess-0-2"></span>
+            <span class="chess" id="chess-0-3"></span>
+            <span class="chess" id="chess-1-0"></span>
+            <span class="chess" id="chess-1-1"></span>
+            <span class="chess" id="chess-1-2"></span>
+            <span class="chess" id="chess-1-3"></span>
+            <span class="chess" id="chess-2-0"></span>
+            <span class="chess" id="chess-2-1"></span>
+            <span class="chess" id="chess-2-2"></span>
+            <span class="chess" id="chess-2-3"></span>
+            <span class="chess" id="chess-3-0"></span>
+            <span class="chess" id="chess-3-1"></span>
+            <span class="chess" id="chess-3-2"></span>
+            <span class="chess" id="chess-3-3"></span>
+
+        </div>
+        <button class="button" onclick="chessGame.moveLeft()">向左</button>
+        <button class="button" onclick="chessGame.moveRight()">向右</button>
+        <button class="button" onclick="chessGame.moveUp()"> 向上</button>
+        <button class="button" onclick="chessGame.moveDown()">向下</button>
     </div>
-    <div class="score-box">
-      <div class="title">SCORE</div>
-      <div class="score">0</div>
-    </div>
-  </div>
-  <div class="introduce">join the numbers and get the 2048 tile</div>
-  <ul class="chessboard">
-    <li>
-      <span class="chess" id="chess-0-0"></span>
-      <span class="chess" id="chess-0-1"></span>
-      <span class="chess" id="chess-0-2"></span>
-      <span class="chess" id="chess-0-3"></span>
-    </li>
-    <li>
-      <span class="chess" id="chess-1-0"></span>
-      <span class="chess" id="chess-1-1"></span>
-      <span class="chess" id="chess-1-2"></span>
-      <span class="chess" id="chess-1-3"></span>
-    </li>
-    <li>
-      <span class="chess" id="chess-2-0"></span>
-      <span class="chess" id="chess-2-1"></span>
-      <span class="chess" id="chess-2-2"></span>
-      <span class="chess" id="chess-2-3"></span>
-    </li>
-    <li>
-      <span class="chess" id="chess-3-0"></span>
-      <span class="chess" id="chess-3-1"></span>
-      <span class="chess" id="chess-3-2"></span>
-      <span class="chess" id="chess-3-3"></span>
-    </li>
-  </ul>
-</div>
-<script src="./js/game.js"></script>
+    <script src="./js/gam.js"></script>
+    <script src="./js/addEventListener.js"></script>
 </body>
+
 </html>
